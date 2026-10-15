@@ -1,0 +1,6 @@
+{
+  "name": "CampusCare – Student Problem Management System",
+  "description": "A modern, responsive platform for college students to report problems and campus administrators to track, manage, and resolve them efficiently.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,491 @@
+{
+  "users": [
+    {
+      "id": "usr-admin-1",
+      "name": "Dr. Arvind Rao",
+      "email": "admin@campuscare.edu",
+      "role": "admin",
+      "department": "Dean of Student Affairs",
+      "phone": "+91 98765 43210",
+      "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=256&q=80",
+      "passwordHash": "3582808911d4da44fac9138dcd99900d5fc70f08155512aacb382822fec7529e709eee4b0a5ee9523d9e05c383bc6de70d04c26be9b0e1ce1dc13a5c13ea75fc",
+      "salt": "6f5e2bd764e3739e2d2b0142c377a2ee"
+    },
+    {
+      "id": "usr-student-1",
+      "name": "Rahul Sharma",
+      "email": "rahul.sharma@campus.edu",
+      "role": "student",
+      "studentId": "2023CS104",
+      "department": "Computer Science & Engineering",
+      "year": "3rd Year",
+      "phone": "+91 98111 22334",
+      "avatarUrl": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=256&q=80",
+      "passwordHash": "2f488ca23e834b34b0773f82c9d70d86b635ba0ad9e7bbc3d65df0b7b308f4c9af5293ba885d907b90dece95922693815f184125bab24c58371658f781122a1c",
+      "salt": "438f29d3e81af95e49190930c18becfe"
+    },
+    {
+      "id": "usr-student-2",
+      "name": "Ananya Patel",
+      "email": "ananya.patel@campus.edu",
+      "role": "student",
+      "studentId": "2024EC210",
+      "department": "Electronics & Communication",
+      "year": "2nd Year",
+      "phone": "+91 98222 33445",
+      "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=256&q=80",
+      "passwordHash": "0a885f46f6a6f04d3ec7db54f9809f597f11571c75cb5de3f5e7b45cb15e5ac9947f3540fb7a5ba2c65b3d15a037f446680f0683d18fc30f102cdd3e37ad7e0f",
+      "salt": "a9241727dd36ea320dd3cac3dfea266e"
+    },
+    {
+      "id": "usr-student-3",
+      "name": "Vikram Singh",
+      "email": "vikram.singh@campus.edu",
+      "role": "student",
+      "studentId": "2022ME085",
+      "department": "Mechanical Engineering",
+      "year": "4th Year",
+      "phone": "+91 98333 44556",
+      "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=256&q=80",
+      "passwordHash": "6d6d7c882b8eb69812245631cebda50a9a777155019dd3632a60fdd1660a4b0a3af80bbe35ef89fd2bd2291c09cde45b807f41bfe18775662294bee110be806a",
+      "salt": "131675a0d97a004947f87bdbf4d52f62"
+    }
+  ],
+  "complaints": [
+    {
+      "id": "CC-2026-8199",
+      "title": "Test Projector HDMI Cable Broken",
+      "category": "Classroom",
+      "description": "HDMI cable pins are bent, cannot connect laptop for presentation.",
+      "location": "Room 305",
+      "priority": "Medium",
+      "status": "Submitted",
+      "createdAt": "2026-10-15T09:05:32.636Z",
+      "updatedAt": "2026-10-15T09:05:32.636Z",
+      "studentId": "guest-mv9bctzw",
+      "studentName": "Test Student",
+      "studentEmail": "test@student.edu",
+      "studentDepartment": "Undergraduate",
+      "studentRollNo": "TST-001",
+      "timeline": [
+        {
+          "id": "tl-CC-2026-8199-1",
+          "status": "Submitted",
+          "timestamp": "2026-10-15T09:05:32.636Z",
+          "title": "Complaint Registered",
+          "description": "Logged in category: Classroom (Priority: Medium)",
+          "updatedBy": "Test Student"
+        }
+      ]
+    },
+    {
+      "id": "CC-2025-1001",
+      "title": "High-speed Wi-Fi dropping frequently in Central Library 2nd floor reading hall",
+      "category": "Internet/Wi-Fi",
+      "description": "The Wi-Fi network (Campus_Student_5G) keeps disconnecting every 5-10 minutes. More than 40 students studying for upcoming midterm exams in the 2nd floor quiet hall are unable to access IEEE papers and online lecture videos.",
+      "location": "Central Library, 2nd Floor Reading Hall",
+      "priority": "High",
+      "status": "In Progress",
+      "createdAt": "2026-10-12T05:05:14.843Z",
+      "updatedAt": "2026-10-14T07:05:14.843Z",
+      "studentId": "usr-student-1",
+      "studentName": "Rahul Sharma",
+      "studentEmail": "rahul.sharma@campus.edu",
+      "studentDepartment": "Computer Science & Engineering",
+      "studentRollNo": "2023CS104",
+      "adminResponse": "Campus Network & IT cell dispatched senior technician. The primary access point (AP-204) had an overheating switch port. Replacement Gigabit AP is being wired today.",
+      "assignedDepartment": "IT & Network Infrastructure",
+      "timeline": [
+        {
+          "id": "tl-1001-1",
+          "status": "Submitted",
+          "timestamp": "2026-10-12T05:05:14.843Z",
+          "title": "Complaint Registered",
+          "description": "Complaint submitted by Rahul Sharma via Student Portal.",
+          "updatedBy": "Student"
+        },
+        {
+          "id": "tl-1001-2",
+          "status": "Under Review",
+          "timestamp": "2026-10-13T03:05:14.843Z",
+          "title": "Assigned to IT Infrastructure",
+          "description": "Grievance cell reviewed urgency and assigned ticket to Campus Network Admin.",
+          "updatedBy": "Admin: Grievance Desk"
+        },
+        {
+          "id": "tl-1001-3",
+          "status": "In Progress",
+          "timestamp": "2026-10-14T07:05:14.843Z",
+          "title": "Field Inspection in Progress",
+          "description": "Technician on-site at Library 2nd floor. Replacement unit approved.",
+          "updatedBy": "Admin: IT Cell"
+        }
+      ]
+    },
+    {
+      "id": "CC-2025-1002",
+      "title": "Digital projector lamp flickering and audio crackling in Seminar Hall 1",
+      "category": "Classroom",
+      "description": "The overhead HDMI projector lamp cuts to black periodically for 5 seconds during lectures. Also the left ceiling speaker produces loud static humming during faculty presentations.",
+      "location": "Main Academic Block, Seminar Hall 1 (Ground Floor)",
+      "priority": "Medium",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T01:05:14.843Z",
+      "updatedAt": "2026-10-13T08:05:14.843Z",
+      "resolvedAt": "2026-10-13T08:05:14.843Z",
+      "studentId": "usr-student-1",
+      "studentName": "Rahul Sharma",
+      "studentEmail": "rahul.sharma@campus.edu",
+      "studentDepartment": "Computer Science & Engineering",
+      "studentRollNo": "2023CS104",
+      "adminResponse": "AV Maintenance team replaced the 4K projector lamp module with an OEM spare and re-grounded the PA audio amplifier cable. Successfully tested.",
+      "assignedDepartment": "Audio-Visual & Facilities",
+      "timeline": [
+        {
+          "id": "tl-1002-1",
+          "status": "Submitted",
+          "timestamp": "2026-10-09T01:05:14.843Z",
+          "title": "Complaint Logged",
+          "description": "Complaint filed regarding Seminar Hall 1 equipment.",
+          "updatedBy": "Student"
+        },
+        {
+          "id": "tl-1002-2",
+          "status": "Under Review",
+          "timestamp": "2026-10-10T06:05:14.843Z",
+          "title": "Reviewed by Estate Officer",
+          "description": "AV team contacted for spare replacement.",
+          "updatedBy": "Admin: Estate Office"
+        },
+        {
+          "id": "tl-1002-3",
+          "status": "In Progress",
+          "timestamp": "2026-10-12T04:05:14.843Z",
+          "title": "Work Order Dispatched",
+          "description": "Technician assigned for evening maintenance window.",
+          "updatedBy": "Admin: Facilities Desk"
+        },
+        {
+          "id": "tl-1002-4",
+          "status": "Resolved",
+          "timestamp": "2026-10-13T08:05:14.843Z",
+          "title": "Issue Resolved & Tested",
+          "description": "Lamp replaced and acoustic interference resolved.",
+          "updatedBy": "Admin: AV Engineer"
+        }
+      ],
+      "feedback": {
+        "rating": 5,
+        "comment": "Fixed right in time for our guest lecture! Excellent response and clear audio now.",
+        "submittedAt": "2026-10-13T13:05:14.843Z"
+      }
+    },
+    {
+      "id": "CC-2025-1003",
+      "title": "Water cooler purification filter replacement needed on 3rd floor",
+      "category": "Drinking Water",
+      "description": "The RO UV filter on the water dispensing station shows a red warning indicator light, and water tastes metallic. Students on the entire 3rd floor are relying on this cooler.",
+      "location": "Aryabhatta Block, 3rd Floor East Wing",
+      "priority": "High",
+      "status": "Under Review",
+      "createdAt": "2026-10-14T04:05:14.843Z",
+      "updatedAt": "2026-10-14T08:05:14.843Z",
+      "studentId": "usr-student-2",
+      "studentName": "Ananya Patel",
+      "studentEmail": "ananya.patel@campus.edu",
+      "studentDepartment": "Electronics & Communication",
+      "studentRollNo": "2024EC210",
+      "adminResponse": "Sanitation officer has tagged the machine and notified the authorized annual maintenance vendor for immediate filter cartridge swap.",
+      "assignedDepartment": "Public Health & Sanitation",
+      "timeline": [
+        {
+          "id": "tl-1003-1",
+          "status": "Submitted",
+          "timestamp": "2026-10-14T04:05:14.843Z",
+          "title": "Issue Submitted",
+          "description": "Drinking water filter warning reported.",
+          "updatedBy": "Student"
+        },
+        {
+          "id": "tl-1003-2",
+          "status": "Under Review",
+          "timestamp": "2026-10-14T08:05:14.843Z",
+          "title": "Vendor Notification Issued",
+          "description": "Water quality team dispatched warning label and contacted service vendor.",
+          "updatedBy": "Admin: Sanitation Dept"
+        }
+      ]
+    },
+    {
+      "id": "CC-2025-1004",
+      "title": "Broken glassware and uncalibrated digital scale in Chemistry Lab 2",
+      "category": "Laboratory",
+      "description": "Precision balance table 4 is drifting by +/- 0.4g which causes errors in titration experiments. Additionally, broken beaker shards near sink 2 pose a minor safety hazard.",
+      "location": "Science Complex, Lab 204 (Chemistry Lab 2)",
+      "priority": "Medium",
+      "status": "Submitted",
+      "createdAt": "2026-10-15T02:05:14.843Z",
+      "updatedAt": "2026-10-15T02:05:14.843Z",
+      "studentId": "usr-student-2",
+      "studentName": "Ananya Patel",
+      "studentEmail": "ananya.patel@campus.edu",
+      "studentDepartment": "Electronics & Communication",
+      "studentRollNo": "2024EC210",
+      "timeline": [
+        {
+          "id": "tl-1004-1",
+          "status": "Submitted",
+          "timestamp": "2026-10-15T02:05:14.843Z",
+          "title": "Complaint Registered",
+          "description": "Safety and calibration complaint logged for Chemistry Lab 2.",
+          "updatedBy": "Student"
+        }
+      ]
+    },
+    {
+      "id": "CC-2025-1005",
+      "title": "Route 12 college bus arriving 25-30 minutes late during morning pickup",
+      "category": "Transport",
+      "description": "Bus #12 from Green Valley / North Ring Road has been delayed continuously for four days this week, causing over 35 students to miss the 8:30 AM first hour attendance.",
+      "location": "Route 12 - North Ring Road Stop #4",
+      "priority": "High",
+      "status": "In Progress",
+      "createdAt": "2026-10-11T00:05:14.843Z",
+      "updatedAt": "2026-10-14T01:05:14.843Z",
+      "studentId": "usr-student-3",
+      "studentName": "Vikram Singh",
+      "studentEmail": "vikram.singh@campus.edu",
+      "studentDepartment": "Mechanical Engineering",
+      "studentRollNo": "2022ME085",
+      "adminResponse": "Transport coordinator investigated. Road widening construction on Ring Road caused the bottleneck. Revised departure timetable will be rolled out starting Monday with a standby feeder bus.",
+      "assignedDepartment": "Transport & Logistics",
+      "timeline": [
+        {
+          "id": "tl-1005-1",
+          "status": "Submitted",
+          "timestamp": "2026-10-11T00:05:14.843Z",
+          "title": "Transport Delay Reported",
+          "description": "Multiple students impacted by morning route delay.",
+          "updatedBy": "Student"
+        },
+        {
+          "id": "tl-1005-2",
+          "status": "Under Review",
+          "timestamp": "2026-10-11T22:05:14.843Z",
+          "title": "Route Audit Initiated",
+          "description": "GPS telemetry logs verified with bus fleet operator.",
+          "updatedBy": "Admin: Transport Head"
+        },
+        {
+          "id": "tl-1005-3",
+          "status": "In Progress",
+          "timestamp": "2026-10-14T01:05:14.843Z",
+          "title": "Alternate Route Deployed",
+          "description": "Feeder bus scheduled and driver instructed on shortcut diversion.",
+          "updatedBy": "Admin: Fleet Manager"
+        }
+      ]
+    },
+    {
+      "id": "CC-2025-1006",
+      "title": "Hostel Block C - Hot water solar geyser tripping main breaker",
+      "category": "Hostel",
+      "description": "The 1st floor bathroom circuit breaker trips every time the auxiliary water heater is switched on before 7:00 AM, leaving residents without hot water during cold mornings.",
+      "location": "Boys Hostel Block C, 1st Floor Common Washroom",
+      "priority": "High",
+      "status": "Resolved",
+      "createdAt": "2026-10-06T21:05:14.843Z",
+      "updatedAt": "2026-10-11T06:05:14.843Z",
+      "resolvedAt": "2026-10-11T06:05:14.843Z",
+      "studentId": "usr-student-3",
+      "studentName": "Vikram Singh",
+      "studentEmail": "vikram.singh@campus.edu",
+      "studentDepartment": "Mechanical Engineering",
+      "studentRollNo": "2022ME085",
+      "adminResponse": "Hostel warden and campus electrician replaced the overloaded 16A breaker with an industrial grade 32A RCCB unit and insulated heating coil terminals.",
+      "assignedDepartment": "Hostel Maintenance & Electrical",
+      "timeline": [
+        {
+          "id": "tl-1006-1",
+          "status": "Submitted",
+          "timestamp": "2026-10-06T21:05:14.843Z",
+          "title": "Complaint Logged",
+          "description": "Electrical tripping reported in Block C.",
+          "updatedBy": "Student"
+        },
+        {
+          "id": "tl-1006-2",
+          "status": "In Progress",
+          "timestamp": "2026-10-09T05:05:14.843Z",
+          "title": "Electrician Assigned",
+          "description": "Diagnostics revealed heater coil leakage current.",
+          "updatedBy": "Admin: Electrical Section"
+        },
+        {
+          "id": "tl-1006-3",
+          "status": "Resolved",
+          "timestamp": "2026-10-11T06:05:14.843Z",
+          "title": "Breaker & Coil Replaced",
+          "description": "Full load test successful. System operating normally.",
+          "updatedBy": "Admin: Chief Electrician"
+        }
+      ],
+      "feedback": {
+        "rating": 4,
+        "comment": "Hot water is consistent now. Thanks for addressing this so fast.",
+        "submittedAt": "2026-10-11T23:05:14.843Z"
+      }
+    },
+    {
+      "id": "CC-2025-1007",
+      "title": "Student Canteen Counter 2 digital payment QR terminal offline",
+      "category": "Canteen",
+      "description": "The UPI payment display at lunch counter 2 has been showing \"Connection Timed Out\" which causes huge queues during the 1:00 PM rush hour.",
+      "location": "Campus Hub, Central Food Court Counter 2",
+      "priority": "Low",
+      "status": "Resolved",
+      "createdAt": "2026-10-10T03:05:14.843Z",
+      "updatedAt": "2026-10-12T01:05:14.843Z",
+      "resolvedAt": "2026-10-12T01:05:14.843Z",
+      "studentId": "usr-student-1",
+      "studentName": "Rahul Sharma",
+      "studentEmail": "rahul.sharma@campus.edu",
+      "studentDepartment": "Computer Science & Engineering",
+      "studentRollNo": "2023CS104",
+      "adminResponse": "IT department provided a dedicated dual-band 4G backup router to the food court and upgraded payment terminal firmware.",
+      "assignedDepartment": "Campus Services & IT",
+      "timeline": [
+        {
+          "id": "tl-1007-1",
+          "status": "Submitted",
+          "timestamp": "2026-10-10T03:05:14.843Z",
+          "title": "Payment Issue Reported",
+          "description": "POS terminal failure noted.",
+          "updatedBy": "Student"
+        },
+        {
+          "id": "tl-1007-2",
+          "status": "Resolved",
+          "timestamp": "2026-10-12T01:05:14.843Z",
+          "title": "Connectivity Restored",
+          "description": "New POS soundbox and stable router placed.",
+          "updatedBy": "Admin: Campus Services"
+        }
+      ],
+      "feedback": {
+        "rating": 5,
+        "comment": "Lunch line moves much faster now! Great job.",
+        "submittedAt": "2026-10-12T19:05:14.843Z"
+      }
+    },
+    {
+      "id": "CC-2025-1008",
+      "title": "Discrepancy in semester exam fee receipt on online student portal",
+      "category": "Fees",
+      "description": "Payment of Rs. 4,500 was deducted via Net Banking for End-Semester Examination, but the student ERP portal still shows \"Pending Verification\" with fine warning.",
+      "location": "Student ERP Portal & Accounts Counter",
+      "priority": "Medium",
+      "status": "Under Review",
+      "createdAt": "2026-10-13T06:05:14.843Z",
+      "updatedAt": "2026-10-13T23:05:14.843Z",
+      "studentId": "usr-student-2",
+      "studentName": "Ananya Patel",
+      "studentEmail": "ananya.patel@campus.edu",
+      "studentDepartment": "Electronics & Communication",
+      "studentRollNo": "2024EC210",
+      "adminResponse": "Accounts desk requested payment gateway reconciliation logs. Bank UTR number is being validated.",
+      "assignedDepartment": "Finance & Accounts",
+      "timeline": [
+        {
+          "id": "tl-1008-1",
+          "status": "Submitted",
+          "timestamp": "2026-10-13T06:05:14.843Z",
+          "title": "Fee Status Query Submitted",
+          "description": "Transaction reference shared for manual audit.",
+          "updatedBy": "Student"
+        },
+        {
+          "id": "tl-1008-2",
+          "status": "Under Review",
+          "timestamp": "2026-10-13T23:05:14.843Z",
+          "title": "Bank Reconciliation in Progress",
+          "description": "Accounts team escalated to payment aggregator support.",
+          "updatedBy": "Admin: Accounts Officer"
+        }
+      ]
+    },
+    {
+      "id": "CC-2025-1009",
+      "title": "Timetable clash between Machine Learning and Cloud Computing electives",
+      "category": "Academics",
+      "description": "Both CS-602 (Machine Learning) and CS-604 (Cloud Computing) are scheduled on Tuesday and Thursday 11:30 AM slot, preventing dual specialization.",
+      "location": "Academic Section, Dean of Academics Office",
+      "priority": "Medium",
+      "status": "Submitted",
+      "createdAt": "2026-10-14T19:05:14.843Z",
+      "updatedAt": "2026-10-14T19:05:14.843Z",
+      "studentId": "usr-student-1",
+      "studentName": "Rahul Sharma",
+      "studentEmail": "rahul.sharma@campus.edu",
+      "studentDepartment": "Computer Science & Engineering",
+      "studentRollNo": "2023CS104",
+      "timeline": [
+        {
+          "id": "tl-1009-1",
+          "status": "Submitted",
+          "timestamp": "2026-10-14T19:05:14.843Z",
+          "title": "Timetable Query Filed",
+          "description": "Course scheduling conflict submitted.",
+          "updatedBy": "Student"
+        }
+      ]
+    },
+    {
+      "id": "CC-2025-1010",
+      "title": "Restroom tap leakage causing water wastage near Faculty Lounge",
+      "category": "Restroom",
+      "description": "Tap #3 has a continuous high-volume drip causing water overflow into the hallway tiles. Creates slipping hazard.",
+      "location": "Mechanical Block, Ground Floor Washroom",
+      "priority": "Low",
+      "status": "Resolved",
+      "createdAt": "2026-10-08T07:05:14.843Z",
+      "updatedAt": "2026-10-10T04:05:14.843Z",
+      "resolvedAt": "2026-10-10T04:05:14.843Z",
+      "studentId": "usr-student-3",
+      "studentName": "Vikram Singh",
+      "studentEmail": "vikram.singh@campus.edu",
+      "studentDepartment": "Mechanical Engineering",
+      "studentRollNo": "2022ME085",
+      "adminResponse": "Plumber replaced the worn internal ceramic cartridge and adjusted line pressure.",
+      "assignedDepartment": "Sanitation & Plumbing",
+      "timeline": [
+        {
+          "id": "tl-1010-1",
+          "status": "Submitted",
+          "timestamp": "2026-10-08T07:05:14.843Z",
+          "title": "Leakage Reported",
+          "description": "Tap defect logged.",
+          "updatedBy": "Student"
+        },
+        {
+          "id": "tl-1010-2",
+          "status": "Resolved",
+          "timestamp": "2026-10-10T04:05:14.843Z",
+          "title": "Valve Repaired",
+          "description": "Plumbing maintenance completed.",
+          "updatedBy": "Admin: Maintenance Section"
+        }
+      ],
+      "feedback": {
+        "rating": 5,
+        "comment": "Cleaned up nicely and no more water leakage.",
+        "submittedAt": "2026-10-10T21:05:14.843Z"
+      }
+    }
+  ],
+  "system": {
+    "initializedAt": "2026-10-15T09:05:14.845Z",
+    "version": "1.0.0",
+    "storageType": "Persistent File-Backed JSON Store (MongoDB-Ready Architecture)"
+  }
+}
